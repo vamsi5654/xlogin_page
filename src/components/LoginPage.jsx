@@ -10,11 +10,12 @@ function LoginPage() {
     e.preventDefault();
 
     if (username === "user" && password === "password") {
-      setMessage("Invalid username or password");
-      
-    } else {
       setMessage("Welcome, user!");
       setIsLoggedIn(true); // Hide form
+      
+    } else {
+      setMessage("Invalid username or password");
+      
     }
   };
 
